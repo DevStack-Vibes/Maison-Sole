@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Sole - Premium Footwear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Maison Sole</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a onclick="showPage('home')">Home</a></li>
+                    <li><a onclick="showPage('men')">Men</a></li>
+                    <li><a onclick="showPage('women')">Women</a></li>
+                    <li><a onclick="showPage('kids')">Kids</a></li>
+                    <li><a onclick="showPage('cart')">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a onclick="showPage('cart')"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home" class="page-section active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Step Into Style</h2>
+                <p>Discover the latest trends in footwear for every occasion</p>
+                <a class="btn" onclick="showPage('men')">Shop Now</a>
+            </div>
+        </div>
+
+        <!-- Featured Categories -->
+        <div class="categories">
+            <div class="container">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card" onclick="showPage('men')">
+                        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Men's Shoes">
+                        <div class="category-content">
+                            <h3>Men's Collection</h3>
+                            <a>Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="showPage('women')">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Women's Shoes">
+                        <div class="category-content">
+                            <h3>Women's Collection</h3>
+                            <a>Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="showPage('kids')">
+                        <img src="image 7.png" alt="Kids Shoes">
+                        <div class="category-content">
+                            <h3>Kids Collection</h3>
+                            <a>Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Men's Products Page -->
+    <section id="men" class="page-section">
+        <div class="products">
+            <div class="container">
+                <h2>Men's Collection</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Classic White Sneakers">
+                        </div>
+                        <div class="product-info">
+                            <h3>Classic Sneakers</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;25,000</span>
+                                <span class="original-price">Rs&nbsp;30,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(1, 'Classic White Sneakers', 89.99, 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Running Shoes">
+                        </div>
+                        <div class="product-info">
+                            <h3>Running Shoes</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;35,000</span>
+                                <span class="original-price">Rs&nbsp;40,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(2, 'Running Shoes', 129.99, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Casual Loafers">
+                        </div>
+                        <div class="product-info">
+                            <h3>Casual Loafers</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;20,000</span>
+                                <span class="original-price">Rs&nbsp;28,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(3, 'Casual Loafers', 79.99, 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="image 8.png" alt="Basketball Shoes">
+                        </div>
+                        <div class="product-info">
+                            <h3>Basketball Shoes</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;39,000</span>
+                                <span class="original-price">Rs&nbsp;48,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(4, 'Basketball Shoes', 139.99, 'https://images.unsplash.com/photo-1605030753481-bb38b08c384a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women's Products Page -->
+    <section id="women" class="page-section">
+        <div class="products">
+            <div class="container">
+                <h2>Women's Collection</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Women's Athletic Shoes">
+                        </div>
+                        <div class="product-info">
+                            <h3>Women's Athletic Shoes</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;30,000</span>
+                                <span class="original-price">Rs&nbsp;40,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(5, 'Women\'s Athletic Shoes', 109.99, 'https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Fashion Heels">
+                        </div>
+                        <div class="product-info">
+                            <h3>Fashion Heels</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;28,000</span>
+                                <span class="original-price">Rs&nbsp;36,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(6, 'Fashion Heels', 99.99, 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="image 9.png" alt="Summer Sandals">
+                        </div>
+                        <div class="product-info">
+                            <h3>Summer Sandals</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;14,000</span>
+                                <span class="original-price">Rs&nbsp;20,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(7, 'Summer Sandals', 49.99, 'https://images.unsplash.com/photo-1585123334904-845d60e97b29?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1542280756-74b2f55e73ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Casual Flats">
+                        </div>
+                        <div class="product-info">
+                            <h3>Casual Flats</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;17,000</span>
+                                <span class="original-price">Rs&nbsp;22,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(8, 'Casual Flats', 59.99, 'https://images.unsplash.com/photo-1542280756-74b2f55e73ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kids Products Page -->
+    <section id="kids" class="page-section">
+        <div class="products">
+            <div class="container">
+                <h2>Kids Collection</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="image 1.png" alt="Kids' Running Shoes">
+                        </div>
+                        <div class="product-info">
+                            <h3>Kids' Running Shoes</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;17,000</span>
+                                <span class="original-price">Rs&nbsp;22,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(9, 'Kids\' Running Shoes', 59.99, 'https://images.unsplash.com/photo-1562272456-87065009fe68?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="image 2.png" alt="Kids' Sneakers">
+                        </div>
+                        <div class="product-info">
+                            <h3>Kids' Sneakers</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;14,000</span>
+                                <span class="original-price">Rs&nbsp;20,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(10, 'Kids\' Sneakers', 49.99, 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="image 3.png" alt="Kids' Sandals">
+                        </div>
+                        <div class="product-info">
+                            <h3>Kids' Sandals</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;8,000</span>
+                                <span class="original-price">Rs&nbsp;12,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(11, 'Kids\' Sandals', 29.99, 'https://images.unsplash.com/photo-1573100925118-870b8efc799d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Kids' Boots">
+                        </div>
+                        <div class="product-info">
+                            <h3>Kids' Boots</h3>
+                            <div class="product-price">
+                                <span class="price">Rs&nbsp;19,000</span>
+                                <span class="original-price">Rs&nbsp;25,000</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(12, 'Kids\' Boots', 69.99, 'https://images.unsplash.com/photo-1514989940723-e8e51635b782?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Page -->
+    <section id="cart" class="page-section">
+        <div class="cart-page">
+            <div class="container">
+                <h2>Your Shopping Cart</h2>
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                    <p class="empty-cart-message">Your cart is empty</p>
+                </div>
+                <div class="cart-total">
+                    Total: Rs&nbsp;<span id="cart-total">0.00</span>
+                </div>
+                <button class="btn checkout-btn" onclick="showPage('checkout')">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Page -->
+    <section id="checkout" class="page-section">
+        <div class="checkout-page">
+            <div class="container">
+                <h2>Checkout</h2>
+                <div class="checkout-form">
+                    <div class="checkout-details">
+                        <h3>Billing Details</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="abc">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="abc@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Shipping Address</label>
+                            <input type="text" id="address" placeholder="Narowal">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Narowal">
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">ZIP Code</label>
+                            <input type="text" id="zip" placeholder="10001">
+                        </div>
+                        
+                        <h3>Payment Information</h3>
+                        <div class="form-group">
+                            <label for="card-name">Name on Card</label>
+                            <input type="text" id="card-name" placeholder="abc">
+                        </div>
+                        <div class="form-group">
+                            <label for="card-number">Credit Card Number</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="form-group" style="display: flex; gap: 1rem;">
+                            <div style="flex: 1;">
+                                <label for="card-expiry">Expiration Date</label>
+                                <input type="text" id="card-expiry" placeholder="MM/YY">
+                            </div>
+                            <div style="flex: 1;">
+                                <label for="card-cvc">CVC</label>
+                                <input type="text" id="card-cvc" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="checkout-summary">
+                        <h3>Order Summary</h3>
+                        <div id="checkout-items">
+                            <!-- Checkout items will be dynamically added here -->
+                        </div>
+                        <div class="summary-total">
+                            Total: Rs&nbsp;<span id="checkout-total">0.00</span>
+                        </div>
+                        <button class="btn" onclick="placeOrder()">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Confirmation Page -->
+    <section id="confirmation" class="page-section">
+        <div class="container">
+            <div class="order-confirmation">
+                <i class="fas fa-check-circle"></i>
+                <h2>Order Confirmed!</h2>
+                <p>Thank you for your purchase. Your order has been successfully placed.</p>
+                <p>Order #: <strong>SM123456</strong></p>
+                <p>We've sent a confirmation email with your order details.</p>
+                <button class="btn" onclick="showPage('home')" style="margin-top: 20px;">Continue Shopping</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maison Sole</h3>
+                    <p>Providing quality footwear for every step of your journey since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Narowal</p>
+                    <p><i class="fas fa-phone"></i> +93-3339070125</p>
+                    <p><i class="fas fa-envelope"></i> devstackvibes1@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Maison Sole. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
